@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Tapestry&display=swap"
+        rel="stylesheet">
+
+    <title>Контакты</title>
+</head>
+
+<body>
+    <h1>Контакты</h1>
+    <div>
+        <a href="../index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="articles.html">Статьи</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="page-nav.html">Навигация</a>
+        <a href="registration.html">Регистрация</a>
+    </div>
+    <hr>
+
+    <div>
+        <h2>Адрес</h2>
+        <p>г.Днепр, ул. Артековская, 13. Днепропетровская обл. Амур-Нижнеднепровский район. 49000</p>
+    </div>
+    <hr>
+
+    <div>
+        <h2>Месторасположение</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2643.1766992638436!2d35.0736586!3d48.5106773!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d95861b8b9e905%3A0x681617127ddb72ca!2z0YPQuy4g0JDRgNGC0LXQutC-0LLRgdC60LDRjywgMTMsINCU0L3QtdC_0YAsINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0OTAwMA!5e0!3m2!1sru!2sua!4v1650201943335!5m2!1sru!2sua"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <hr>
+
+    <div>
+        <h2>Свяжитесь с нами</h2>
+        <form action="feedback" method="get">
+            <fieldset>
+                <legend>Заполните все поля</legend>
+                <div>
+                    <label for="name">Имя:</label>
+                    <input id="name" name="name" placeholder="Введите имя" type="text">
+                </div>
+
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input id="phone" name="phone" pattern="+380-[0-9]{5}-[0-9]{4}" placeholder="Введите номер"
+                        type="tel">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" placeholder="Введите e-mail" type="email">
+                </div>
+
+                <div>
+                    <label for="txt">Напишите вопрос</label>
+                    <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Напишите вопрос"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Отправить</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="copyright">&copy;Алексей Акастёлов</div>
+    </footer>
+</body>
+
+</html>

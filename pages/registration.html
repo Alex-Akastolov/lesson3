@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Tapestry&display=swap"
+        rel="stylesheet">
+
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <h1>Регистрация</h1>
+    <div>
+        <a href="../index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="page-nav.html">Навигация</a>
+        <a href="articles.html">Статьи</a>
+    </div>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+            <legend>Данные о себе</legend>
+            <div>
+                <label for="lastname">Фамилия*</label>
+                <input name="lastname" id="lastname" type="text" placeholder="Фамилия" required>
+            </div>
+
+            <div>
+                <label for="name">Имя*</label>
+                <input name="name" id="name" type="text" placeholder="Имя" required>
+            </div>
+
+            <div>
+                <label for="father">Отчество*</label>
+                <input name="father" id="father" type="text" placeholder="Отчество" required>
+            </div>
+
+            <div>
+                <label for="pass">Пароль*</label>
+                <input name="pass" id="pass" type="password" placeholder="Придумайте пароль" minlength="4" maxlength="8"
+                    required>
+            </div>
+
+            <div>
+                <label for="email">E-mail*</label>
+                <input name="email" id="email" type="email" placeholder="Введите e-mail" required>
+            </div>
+
+            <div>
+                <label for="photo">Выберите фото</label>
+                <input name="photo" id="photo" type="file">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите пол</legend>
+            <div>
+                <input value="male" id="male" type="radio" name="gender">
+                <label for="male">Мужской</label>
+            </div>
+
+            <div>
+                <input value="female" id="female" type="radio" name="gender">
+                <label for="female">Женский</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите дату рождения*</legend>
+            <div>
+                <label for="list">Год рождения</label>
+                <select name="list" id="list" required>
+                    <option selected disabled value="">Выберите год</option>
+                    <option value="1985">1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                    <option value="1988">1988</option>
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите любимые жанры музыки</legend>
+            <div>
+                <input checked name="kit" value="cl" id="cl" type="checkbox">
+                <label for="cl">Класичесская</label>
+            </div>
+
+            <div>
+                <input checked name="kit" value="rock" id="rock" type="checkbox">
+                <label for="rock">Рок</label>
+            </div>
+
+            <div>
+                <input checked name="kit" value="pop" id="pop" type="checkbox">
+                <label for="pop">Поп</label>
+            </div>
+
+            <div>
+                <input checked name="kit" value="rap" id="rap" type="checkbox">
+                <label for="rap">Рэп</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Немного о себе</legend>
+            <div>
+                <label for="multitext">Напишите что-нибудь</label>
+                <textarea name="multitext" id="multitext" cols="30" rows="10" placeholder="О себе"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Подтвердите действие</legend>
+            <div>
+                <input type="submit" value="Регистрация">
+                <input type="reset" value="Сброс">
+            </div>
+        </fieldset>
+    </form>
+    <footer class="footer">
+        <div class="copyright">&copy;Алексей Акастёлов</div>
+    </footer>
+</body>
+
+</html>

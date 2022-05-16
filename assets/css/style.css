@@ -371,8 +371,10 @@ body {
 }
 
 .main {
-  font-size: 1, 7rem;
-  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.3rem;
   display: block;
   margin-top: 170px;
   margin-left: 20px;
@@ -497,20 +499,21 @@ li {
 .comments__item a {
   text-decoration: none;
   color: orange;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 .comments__item a:hover {
   background-color: orange;
   color: black;
   border-radius: 5px;
+  text-decoration: underline;
 }
 
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   bottom: 0;
   position: fixed;
   background-color: orange;

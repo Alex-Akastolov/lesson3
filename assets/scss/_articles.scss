@@ -34,11 +34,13 @@
         a{
             text-decoration: none;
             color: orange;
+            transition: 0.4s;
         }
         a:hover{
             background-color: orange;
             color: black;
             border-radius: 5px;
+            text-decoration: underline;
         }
     }
 }

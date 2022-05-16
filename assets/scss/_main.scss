@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../../img/backgroung-image.jpeg);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Tapestry', cursive;
+}
+
+.header {
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: orange;
+    width: 100%;
+    padding-top: 5px;
+    height: 70px;
+    text-align: center;
+    &__cont {
+        margin: auto;
+    }
+}
+
+.main {
+    font-size: 1,7rem;
+    height: 550px;
+    display: block;
+    margin-top: 170px;
+    margin-left: 20px;
+    color: white;
+}

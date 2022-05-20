@@ -14,17 +14,26 @@
     }
 }
 
+.topic{
+    text-align: center;
+}
+
 .read-link {
-    text-decoration: none;
     color: white;
     &:hover {
         color: orange;
+        text-decoration: none;
     }
 }
 
 .main p{
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.big-letter{
+    font-size: 2rem;
+    color: green;
 }
 
 .comments{
@@ -41,6 +50,11 @@
             color: black;
             border-radius: 5px;
             text-decoration: underline;
+        }
+    }
+    &__link{
+        &--box{
+            text-align: right;
         }
     }
 }

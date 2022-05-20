@@ -1,0 +1,21 @@
+.gallery{
+    display: flex;
+    margin-top: 220px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    &__image{
+        width: 200px;
+        height: 400px;
+        border: 3px green solid;
+        padding: 5px;
+    }
+    &__image:hover{
+        border-color: transparent;
+    }
+    a{
+        text-decoration: none;
+        color: orange;
+        font-size: 1.5rem;
+    }
+}

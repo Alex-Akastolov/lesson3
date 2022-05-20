@@ -1,0 +1,86 @@
+fieldset{
+    background-color: #7ac0f534;
+}
+
+.pixel:hover{
+    outline: 2px dotted #f90101;
+}
+
+.registration__cont{
+    display: flex;
+    margin-top: 140px;
+    justify-content: center;
+    select,
+    input {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    input[type="file"] {
+        padding: 0;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        width: auto;
+    }
+    input[type="radio"]:hover{
+        border: red;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px 20px;
+        resize: vertical;
+        min-height: 75px;
+        max-height: 33vh;
+    }
+    &--important{
+        color: red;
+    }
+    &--submit{
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: #00f054;
+        background-image: linear-gradient(to top left,
+                                          #00000033,
+                                          #00000033 30%,
+                                          #00000000);
+        box-shadow: inset 2px 2px 3px #ffffff99,
+                    inset -2px -2px 3px #00000099;
+    }
+    &--submit:hover{
+        background-color: #4bf687;
+    }
+    &--submit:active{
+        box-shadow: inset -2px -2px 3px #ffffff99,
+        inset 2px 2px 3px #00000099;
+    }
+    &--reset{
+        border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: #dc0000;
+            background-image: linear-gradient(to top left,
+                                              #00000033,
+                                              #00000033 30%,
+                                              #00000000);
+            box-shadow: inset 2px 2px 3px #ffffff99,
+                        inset -2px -2px 3px #00000099;
+    } 
+    &--reset:hover{
+        background-color: #ff0000;
+    }
+    &--reset:active{
+        box-shadow: inset -2px -2px 3px #ffffff99,
+        inset 2px 2px 3px #00000099;
+    }
+}

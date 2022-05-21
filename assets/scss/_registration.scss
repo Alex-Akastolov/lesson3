@@ -10,6 +10,18 @@ fieldset{
     display: flex;
     margin-top: 140px;
     justify-content: center;
+    fieldset{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px orange solid;
+        border-radius: 10px;
+        width: 500px;
+        padding-right: 20px;
+        legend{
+            border: 3px orange solid;
+            border-radius: inherit;
+        }
+    }
     select,
     input {
         width: 100%;
@@ -31,6 +43,10 @@ fieldset{
         resize: vertical;
         min-height: 75px;
         max-height: 33vh;
+    }
+    &--item{
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     &--important{
         color: red;

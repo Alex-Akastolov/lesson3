@@ -15,53 +15,54 @@
 </head>
 
 <body class="body">
-    <div class="header">
+    <div class="header container">
         <h1 class="header__cont">Регистрация</h1>
     </div>
     <div class="navbar-top">
         <a class="navbar-top__link" href="../index.html">Главная</a>
         <a class="navbar-top__link" href="catalog.html">Каталог</a>
-        <a class="navbar-top__link" href="contacts.html">Контакты</a>
         <a class="navbar-top__link" href="gallery.html">Галерея</a>
-        <a class="navbar-top__link" href="page-nav.html">Навигация</a>
+        <a class="navbar-top__link" href="contacts.html">Контакты</a>
         <a class="navbar-top__link" href="articles.html">Статьи</a>
+        <a class="navbar-top__link" href="page-nav.html">Навигация</a>
+        <a class="navbar-top__link navbar-top__link--active" href="registration.html">Регистрация</a>
     </div>
-    <div class="registration__cont">
+    <div class="registration__cont container">
         <form action="https://tests.fomenko.top/echo/index.php" method="get">
             <fieldset>
                 <legend>Данные о себе</legend>
-                <div>
+                <div class="registration__cont--item">
                     <label for="lastname">Фамилия<span class="registration__cont--important">*</span>
                         <input name="lastname" id="lastname" type="text" placeholder="Фамилия" required>
                     </label>
                 </div>
 
-                <div>
+                <div class="registration__cont--item">
                     <label for="name">Имя<span class="registration__cont--important">*</span>
                         <input name="name" id="name" type="text" placeholder="Имя" required>
                     </label>
                 </div>
 
-                <div>
+                <div class="registration__cont--item">
                     <label for="father">Отчество<span class="registration__cont--important">*</span>
                         <input name="father" id="father" type="text" placeholder="Отчество" required>
                     </label>
                 </div>
 
-                <div>
+                <div class="registration__cont--item">
                     <label for="pass">Пароль<span class="registration__cont--important">*</span>
                         <input name="pass" id="pass" type="password" placeholder="Придумайте пароль" minlength="4"
                             maxlength="8" required>
                     </label>
                 </div>
 
-                <div>
+                <div class="registration__cont--item">
                     <label for="email">E-mail<span class="registration__cont--important">*</span>
                         <input name="email" id="email" type="email" placeholder="Введите e-mail" required>
                     </label>
                 </div>
 
-                <div>
+                <div class="registration__cont--item">
                     <label for="photo">Выберите фото
                         <input name="photo" id="photo" type="file">
                     </label>
@@ -70,12 +71,12 @@
 
             <fieldset>
                 <legend>Выберите пол</legend>
-                <div class="pixel">
+                <div class="registration__cont--item pixel">
                     <input value="male" id="male" type="radio" name="gender">
                     <label for="male">Мужской</label>
                 </div>
 
-                <div class="pixel">
+                <div class="registration__cont--item pixel">
                     <input value="female" id="female" type="radio" name="gender">
                     <label for="female">Женский</label>
                 </div>
@@ -83,7 +84,7 @@
 
             <fieldset>
                 <legend>Выберите дату рождения*</legend>
-                <div>
+                <div class="registration__cont--item">
                     <label for="list">Год рождения</label>
                     <select name="list" id="list" required>
                         <option selected disabled value="">Выберите год</option>
@@ -113,22 +114,22 @@
 
             <fieldset>
                 <legend>Выберите любимые жанры музыки</legend>
-                <div class="pixel">
+                <div class="registration__cont--item pixel">
                     <input checked name="kit" value="cl" id="cl" type="checkbox">
                     <label for="cl">Класичесская</label>
                 </div>
 
-                <div class="pixel">
+                <div class="registration__cont--item pixel">
                     <input checked name="kit" value="rock" id="rock" type="checkbox">
                     <label for="rock">Рок</label>
                 </div>
 
-                <div class="pixel">
+                <div class="registration__cont--item pixel">
                     <input checked name="kit" value="pop" id="pop" type="checkbox">
                     <label for="pop">Поп</label>
                 </div>
 
-                <div class="pixel">
+                <div class="registration__cont--item pixel">
                     <input checked name="kit" value="rap" id="rap" type="checkbox">
                     <label for="rap">Рэп</label>
                 </div>
@@ -136,7 +137,7 @@
 
             <fieldset>
                 <legend>Немного о себе</legend>
-                <div>
+                <div class="registration__cont--item">
                     <label for="multitext">Напишите что-нибудь</label>
                     <textarea name="multitext" id="multitext" cols="30" rows="10" placeholder="О себе"></textarea>
                 </div>
@@ -144,7 +145,7 @@
 
             <fieldset>
                 <legend>Подтвердите действие</legend>
-                <div>
+                <div class="registration__cont--item">
                     <input class="registration__cont--submit" type="submit" value="Регистрация">
                     <input class="registration__cont--reset" type="reset" value="Сброс">
                 </div>
@@ -152,7 +153,7 @@
         </form>
     </div>
     <footer class="footer">
-        <div class="copyright">&copy;Алексей Акастёлов</div>
+        <div class="copyright container">&copy;Алексей Акастёлов</div>
     </footer>
 </body>
 

@@ -11,13 +11,17 @@
     margin-left: 50px;
     margin-right: 50px;
     &__form{
-        border: 5px orange solid;
+        border: 2px orange solid;
         border-radius: 10px;
+        width: 500px;
+        &--item{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
             legend{
                 border: 3px orange solid;
                 border-radius: inherit;
             }
-        
             &--button{
             border: 0;
             line-height: 2.5;

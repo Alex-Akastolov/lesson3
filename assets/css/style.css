@@ -385,6 +385,11 @@ body {
   color: white;
 }
 
+.anchor {
+  position: relative;
+  top: -200px;
+}
+
 .navbar-top {
   background: -webkit-gradient(linear, left top, left bottom, from(orange), to(rgba(125, 185, 232, 0)));
   background: -o-linear-gradient(top, orange 0%, rgba(125, 185, 232, 0) 100%);
@@ -464,6 +469,12 @@ body {
   font-size: 1.5rem;
   list-style-image: url(../../img/flag.jpeg);
   margin: 10px;
+}
+.list__inside li {
+  list-style-image: url(../../img/free-icon-happy-742940.png);
+}
+.list__inside--second li {
+  list-style-image: url(../../img/premium-icon-star-2018166.png);
 }
 
 .article {
@@ -752,6 +763,12 @@ fieldset {
   display: flex;
   bottom: 0;
   position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: orange;
   width: 100%;
   height: 30px;

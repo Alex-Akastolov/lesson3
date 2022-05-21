@@ -5,9 +5,13 @@
     margin: 10px;
     }
     &__inside{
-        list-style-image: ;
+        li{
+        list-style-image: url(../../img/free-icon-happy-742940.png);
+    }
         &--second{
-            list-style-image: ;
+            li{
+            list-style-image: url(../../img/premium-icon-star-2018166.png);
+            }
         }
     }
 } 

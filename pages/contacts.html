@@ -15,8 +15,8 @@
 </head>
 
 <body class="body">
-    <div class="header container">
-        <h1 class="header__cont">Контакты</h1>
+    <div class="header">
+        <h1 class="header__cont  container">Контакты</h1>
     </div>
 
     <div class="navbar-top">
@@ -28,13 +28,12 @@
         <a class="navbar-top__link" href="page-nav.html">Навигация</a>
         <a class="navbar-top__link" href="registration.html">Регистрация</a>
     </div>
-    <hr>
-    <div class="container">
+
+    <div class="contacts container">
         <div class="adress">
             <h2>Адрес</h2>
             <p>г.Днепр, ул. Артековская, 13. Днепропетровская обл. Амур-Нижнеднепровский район. 49000</p>
         </div>
-        <hr>
 
         <div class="place">
             <h2>Месторасположение</h2>
@@ -43,40 +42,42 @@
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <hr>
 
-        <div class="feedback">
+        <div>
             <h2>Свяжитесь с нами</h2>
-            <form action="feedback" method="get">
-                <fieldset class="feedback__form">
-                    <legend>Заполните все поля</legend>
+            <div class="form__cont">
+                <form action="feedback" method="get">
+                    <fieldset class="feedback__form">
+                        <legend>Заполните все поля</legend>
 
-                    <div class="feedback__form--name feedback__form--item">
-                        <label for="name">Имя:</label>
-                        <input id="name" name="name" placeholder="Введите имя" type="text" minlength="3" maxlength="10">
-                    </div>
+                        <div class="form__item">
+                            <label for="name">Имя:</label>
+                            <input id="name" name="name" placeholder="Введите имя" type="text" minlength="3"
+                                maxlength="10">
+                        </div>
 
-                    <div class="feedback__form--number feedback__form--item">
-                        <label for="phone">Телефон:</label>
-                        <input id="phone" name="phone" pattern="+380-[0-9]{5}-[0-9]{4}" placeholder="Введите номер"
-                            type="tel">
-                    </div>
+                        <div class="form__item">
+                            <label for="phone">Телефон:</label>
+                            <input id="phone" name="phone" pattern="+380-[0-9]{5}-[0-9]{4}" placeholder="Введите номер"
+                                type="tel">
+                        </div>
 
-                    <div class="feedback__form--email feedback__form--item">
-                        <label for="email">E-mail:</label>
-                        <input id="email" name="email" placeholder="Введите e-mail" type="email">
-                    </div>
+                        <div class="form__item">
+                            <label for="email">E-mail:</label>
+                            <input id="email" name="email" placeholder="Введите e-mail" type="email">
+                        </div>
 
-                    <div class="feedback__form--text feedback__form--item">
-                        <label for="txt">Напишите вопрос</label>
-                        <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Напишите вопрос"></textarea>
-                    </div>
+                        <div class="form__item">
+                            <label for="txt">Напишите вопрос</label>
+                            <textarea name="txt" id="txt" cols="30" rows="10" placeholder="Напишите вопрос"></textarea>
+                        </div>
 
-                    <div>
-                        <button class="feedback__form--button feedback__form--item" type="submit">Отправить</button>
-                    </div>
-                </fieldset>
-            </form>
+                        <div>
+                            <button class="submit form__item" type="submit">Отправить</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
     <footer class="footer">

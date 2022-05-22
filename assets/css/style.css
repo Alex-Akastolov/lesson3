@@ -346,10 +346,6 @@ template {
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #313030;
   background-image: url(../../img/backgroung-image.jpeg);

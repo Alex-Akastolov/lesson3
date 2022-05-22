@@ -390,7 +390,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1280px;
   padding-right: 20px;
   padding-left: 20px;
@@ -733,7 +732,7 @@ textarea {
   outline: 2px dotted #f90101;
 }
 
-.form__cont {
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,7 +740,7 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.form__cont--important {
+.form__important {
   color: red;
 }
 

@@ -74,10 +74,10 @@ textarea {
 .pixel:hover{
         outline: 2px dotted #f90101;
     }
-.form__cont{
+.form{
     display: flex;
     justify-content: center;
-    &--important{
+    &__important{
         color: red;
     }
     
